@@ -43,5 +43,12 @@ app.delete('/user', (req, res) => {
     res.send('  DELETE request at /user')
 })
 
+app.get('/EsKopi', (req, res) => {
+    res.send("pengen drink eskopi")
+})
+
+app.get("/Eskopi/:Machalatte", (req, res) => {
+    res.send("Ini tampilan user");
+});
 
 app.listen(port, () => console.log(`Server running on port ${port}`))
